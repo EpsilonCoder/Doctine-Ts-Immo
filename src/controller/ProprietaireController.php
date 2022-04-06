@@ -63,7 +63,7 @@ class ProprietaireController extends Controller
       $data->setDateNaissance($_POST['dateNaissance']);
       $data->setLieuNaissance($_POST['lieuNaissance']);
       $data->setCivilite($_POST['civilite']);
-      $data->setCodePieceIdentite($_POST['CodePiece_Identite']);
+      $data->setCodePieceIdentite($_POST['CodePieceIdentite']);
       $data->setNumeroPieceIdentite($_POST['NumeroPiece_Identite']);
       $this->proprietairets->modifierDb();
       return $this->listProprietaire();
