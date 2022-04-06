@@ -58,7 +58,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="mt-5 mb-3 clearfix">
-            <a href="http://localhost/ts_immo/Proprietaire/formulaire" class="btn btn-dark pull-right mt-3"> Ajouter nouveau proprietaire</a>
+            <a href="http://localhost/ts_immo/Proprietaire/formulairel" class="btn btn-dark pull-right mt-3"> Ajouter nouveau proprietaire</a>
           </div>
 
           <table class="table table-dark table-hover table-bordered shadow " width="80%">
@@ -88,9 +88,9 @@
                 echo "<td>" . $proprietaire->getCodePieceIdentite() . "</td>";
                 echo "<td>" . $proprietaire->getNumeroPieceIdentite() . "</td>";
                 echo "<td>";
-                echo '<a href="http://localhost/ts_immo/Proprietaire/detailsProprietaire/' . $proprietaire->getId() . '" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-address-card  btn btn-warning"></span></a>';
-                echo '<a href="http://localhost/ts_immo/Proprietaire/editProprietaire/' . $proprietaire->getId() . '" class="mr-3" title="Modification" data-toggle="tooltip"><span class="fa fa-edit btn btn-info"></span></a>';
-                echo '<a href="http://localhost/ts_immo/Proprietaire/delete/' . $proprietaire->getId() . '" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash btn btn-danger "></span></a>';
+                echo '<a href="http://localhost/ts_immo/Proprietaire/detailsProprietaire/' . $proprietaire->getId() . '" class="mr-3" data-toggle="tooltip"><span class="fa fa-address-card  btn btn-warning"></span></a>';
+                echo '<a href="http://localhost/ts_immo/Proprietaire/editProprietaire/' . $proprietaire->getId() . '" class="mr-3" data-toggle="tooltip"><span class="fa fa-edit btn btn-info"></span></a>';
+                echo '<a href="http://localhost/ts_immo/Proprietaire/delete/' . $proprietaire->getId() . '"  data-toggle="tooltip"><span class="fa fa-trash btn btn-danger "></span></a>';
                 echo "</td>";
                 echo "</tr>";
               }

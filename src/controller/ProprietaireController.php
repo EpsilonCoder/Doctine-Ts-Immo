@@ -27,10 +27,6 @@ class ProprietaireController extends Controller
       $this->proprietairets->insert($proprietaire);
       return $this->listProprietaire();
    }
-   public function accueil()
-   {
-      return $this->view->load("Proprietaire/accueil");
-   }
 
    public function formulaire()
    {
